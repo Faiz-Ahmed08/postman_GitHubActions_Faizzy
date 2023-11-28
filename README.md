@@ -14,7 +14,7 @@ Step 9 : Automated Artifact will be generated
 Step 10: Click and Download the Test Artifact.
 
 
-**Author : Faiz Ahmed
+**Author : Faiz Ahmed**
 
-Email : faiz08889@gmail.com
+**Email : faiz08889@gmail.com
 Linkedin : https://www.linkedin.com/in/faiz-ahmed-a2660189/**
