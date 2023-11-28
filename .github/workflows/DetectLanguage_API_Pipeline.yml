@@ -23,14 +23,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-        uses: actions/checkout@v3
-      - name: Create Dir
+        name: Create Dir
         run: |
             mkdir TestArtifact
 
       # Install NodeJS
-        uses: actions/checkout@v3
-      - name: Install Node
+      - uses: actions/checkout@v3
+        name: Install Node
         with:
            node-version: '17.x'
      
@@ -51,5 +50,5 @@ jobs:
       - name: Publish Report
         uses: actions/upload-artifact@v3
         with:
-        name: Reports
-        path: TestArtifact
+         name: Reports
+         path: TestArtifact
