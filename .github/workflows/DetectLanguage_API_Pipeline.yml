@@ -42,9 +42,8 @@ npm install -g newman-reporter-htmlextra
 
 # Run Collection
 - name: Run Collection
-run: 1
+run: |
 newman run "DetectLanguegeAPI_PostmanCollection.json" -r htmlextra --reporter- talextra-export TestArtifact/report.html
-
 
 # Publish the Report
 - name: Publish Report
