@@ -46,7 +46,7 @@ jobs:
      # Run Collection
       - name: Run Collection
         run: |
-         newman run "DetectLanguegeAPI_PostmanCollection.json" -r htmlextra --reporter- talextra-export SampleArtifact/report.html
+         newman run "DetectLanguegeAPI_PostmanCollection.json" -r htmlextra --reporter-htmlextra-export SampleArtifact/report.html
       #Publish the Report
       - name: Publish Report
         uses: actions/upload-artifact@v3
