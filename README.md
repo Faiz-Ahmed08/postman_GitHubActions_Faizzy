@@ -16,5 +16,6 @@ Step 10: Click and Download the Test Artifact.
 
 **Author : Faiz Ahmed**
 
-**Email : faiz08889@gmail.com
-Linkedin : https://www.linkedin.com/in/faiz-ahmed-a2660189/**
+**Email : faiz08889@gmail.com**
+
+**Linkedin : https://www.linkedin.com/in/faiz-ahmed-a2660189/**
