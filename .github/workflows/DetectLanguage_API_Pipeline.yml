@@ -24,31 +24,32 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-     - name: Create dir
-       run: |
-         mkdir TestArtifact
+      - name: Create Dir
+        run: |
+            mkdir TestArtifact
 
       # Install NodeJS
-       - name: Install Node
-         uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - name: Install Node
         with:
-        node-version: 17.x
+           node-version: '17.x'
      
      
      #Install newaman and reporter
-     - name: Install newman
-      run: |
-      npm install -g newman
-      npm install -g newman-reporter-htmlextra
+      - name: Install newman
+        run: |
+          npm install -g newman
+          npm install -g newman-reporter-htmlextra
+       
     
      
      # Run Collection
-     - name: Run Collection
-       run: |
-     newman run "DetectLanguegeAPI_PostmanCollection.json" -r htmlextra --reporter- talextra-export TestArtifact/report.html
+      - name: Run Collection
+        run: |
+         newman run "DetectLanguegeAPI_PostmanCollection.json" -r htmlextra --reporter- talextra-export TestArtifact/report.html
       #Publish the Report
       - name: Publish Report
-       uses: actions/upload-artifact@v3
-       with:
-      name: Reports
-      path: TestArtifact
+      - uses: actions/upload-artifact@v3
+        with:
+        name: Reports
+        path: TestArtifact
