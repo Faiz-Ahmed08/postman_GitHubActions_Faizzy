@@ -1,0 +1,148 @@
+{
+	"info": {
+		"_postman_id": "ec092f05-d794-4906-ad2b-9b5a27a0ef18",
+		"name": "detectlanguage_API_Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30172535"
+	},
+	"item": [
+		{
+			"name": "https://ws.detectlanguage.com/0.2/languages",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://ws.detectlanguage.com/0.2/languages",
+					"protocol": "https",
+					"host": [
+						"ws",
+						"detectlanguage",
+						"com"
+					],
+					"path": [
+						"0.2",
+						"languages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ws.detectlanguage.com/0.2/detect",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0adf18e2ba7ef0716194c2338cfaad7e"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "q[]",
+							"value": "Hello world",
+							"type": "text"
+						},
+						{
+							"key": "q[]",
+							"value": "Buenos dias",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://ws.detectlanguage.com/0.2/detect",
+					"protocol": "https",
+					"host": [
+						"ws",
+						"detectlanguage",
+						"com"
+					],
+					"path": [
+						"0.2",
+						"detect"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ws.detectlanguage.com/0.2/user/status",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Response time is less than 200ms\", function () {\r",
+							"    pm.expect(pm.response.responseTime).to.be.below(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 0adf18e2ba7ef0716194c2338cfaad7e"
+					}
+				],
+				"url": {
+					"raw": "https://ws.detectlanguage.com/0.2/user/status",
+					"protocol": "https",
+					"host": [
+						"ws",
+						"detectlanguage",
+						"com"
+					],
+					"path": [
+						"0.2",
+						"user",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
