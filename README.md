@@ -12,7 +12,7 @@ Step 4 : Created Postman Collection for all the three API URL.
 
 Step 5 : Update the Detect language API Key in POSTMAN as Header 
 
-![image](https://github.com/Faiz-Ahmed08/postman_GitHubActions_Faizzy/assets/152106688/67f03973-391b-451a-a55a-ed7e4e44cc32)
+![33333](https://github.com/Faiz-Ahmed08/postman_GitHubActions_Faizzy/assets/152106688/67cf5cc8-9c53-4284-ae07-f1c72372f606)
 
 Note - For Endpoints : GET https://ws.detectlanguage.com/0.2/user/status
                        POST https://ws.detectlanguage.com/0.2/detect
@@ -23,7 +23,7 @@ Step 7 : Pushed the code on the GitHub Repository.
 
 Step 8 : Configure the GitHub Action Workflow
 
-Step 9 : Push any Changes , Automated builed is triggred via Github Actions 
+Step 9 : Push any Changes , Automated build is triggered via Github Actions
 
 Step 10 : Automated Artifact will be generated.
 
