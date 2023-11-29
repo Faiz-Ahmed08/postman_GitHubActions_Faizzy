@@ -2,7 +2,7 @@
 
 This is sample Postman Code with execution via GitHub Actions !!!!
 
-Step 1 : Go through the API Defindation at https://detectlanguage.com/
+Step 1 : Go through the API Definition at https://detectlanguage.com/
 
 Step 2 : Downloaded and Installed POSTMAN Tool on my machine.
 
