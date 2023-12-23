@@ -1,5 +1,8 @@
 # postman_GitHubActions_Faizzy
 
+![image](https://github.com/Faiz-Ahmed08/postman_GitHubActions_Faizzy/assets/152106688/de0c0180-8bd7-4f80-9717-f11fb1ac9f13)
+
+
 This is sample Postman Code with execution via GitHub Actions !!!!
 
 Step 1 : Go through the API Definition at https://detectlanguage.com/
